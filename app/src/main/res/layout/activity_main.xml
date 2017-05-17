@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/scanNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="BleName"
+            android:text="SwitchBox_1053" />
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/meterIdEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="表号"
+            android:text="23051606000006" />
+
+        <Spinner
+            android:id="@+id/moduleIdSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/readBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抄表" />
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开阀" />
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关阀" />
+
+        <Button
+            android:id="@+id/writeMeterNetIdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写NETID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/writeMeterIdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写ID" />
+
+        <Button
+            android:id="@+id/writeMeterValueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写底数" />
+
+        <Button
+            android:id="@+id/readMeterStateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读状态" />
+
+        <Button
+            android:id="@+id/writeMeterStateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写状态" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/broadcastWriteMeterIdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广播写ID" />
+
+        <Button
+            android:id="@+id/resetMeterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复位表" />
+
+        <CheckBox
+            android:id="@+id/checkbox2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2ID表" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/breathSpinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/setCenterBreathBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置中心模块呼吸周期" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/testBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="循环抄表" />
+
+    <TextView
+        android:id="@+id/testTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+</LinearLayout>
